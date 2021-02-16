@@ -4,7 +4,7 @@ with open("README.md","r",encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = "My_first_html_map",
+    name = "films_map.html",
     version = "0.0.1",
     author = "Lilia Mudryk",
     author_email = "liliia.mudryk@ucu.edu.ua",
