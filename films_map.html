@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b8024168075c4d669adc8aac832e5c2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b8024168075c4d669adc8aac832e5c2f" ></div>
+        
+</body>
+<script>    
+    
+            var map_b8024168075c4d669adc8aac832e5c2f = L.map(
+                "map_b8024168075c4d669adc8aac832e5c2f",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e8fcee67770d41b3b72fa4d1e383e525 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b8024168075c4d669adc8aac832e5c2f);
+        
+    
+            var feature_group_8d41b461c3914329ba97c1d59ba2413a = L.featureGroup(
+                {}
+            ).addTo(map_b8024168075c4d669adc8aac832e5c2f);
+        
+    
+            var marker_cluster_3b2d588d707b43378b9871d37817bcc1 = L.markerClusterGroup(
+                {}
+            );
+            feature_group_8d41b461c3914329ba97c1d59ba2413a.addLayer(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var marker_eabb21603b1d488b9f6dbea3cbb4f0a9 = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_5b8a02b01dde4bd0835d7784da0dc035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_eabb21603b1d488b9f6dbea3cbb4f0a9.setIcon(icon_5b8a02b01dde4bd0835d7784da0dc035);
+        
+    
+        var popup_2b703ee50cb74b31a5def345945b3b35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4006c99c538c495cbf8e9cb21c64a4e6 = $(`<div id="html_4006c99c538c495cbf8e9cb21c64a4e6" style="width: 100.0%; height: 100.0%;">"100 Centre Street" (2001)</div>`)[0];
+            popup_2b703ee50cb74b31a5def345945b3b35.setContent(html_4006c99c538c495cbf8e9cb21c64a4e6);
+        
+
+        marker_eabb21603b1d488b9f6dbea3cbb4f0a9.bindPopup(popup_2b703ee50cb74b31a5def345945b3b35)
+        ;
+
+        
+    
+    
+            var marker_4d0dbf21a78a41b09bd81225046262d5 = L.marker(
+                [22.5000485, -100.0000375],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_b84a6db2f82249749f0c17e8d8e7b412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d0dbf21a78a41b09bd81225046262d5.setIcon(icon_b84a6db2f82249749f0c17e8d8e7b412);
+        
+    
+        var popup_92601772f9ec4f1682167c64cfc9e502 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41292eb191d5423ca06ee56c82ce953f = $(`<div id="html_41292eb191d5423ca06ee56c82ce953f" style="width: 100.0%; height: 100.0%;">"100 mexicanos dijeron" (2001)</div>`)[0];
+            popup_92601772f9ec4f1682167c64cfc9e502.setContent(html_41292eb191d5423ca06ee56c82ce953f);
+        
+
+        marker_4d0dbf21a78a41b09bd81225046262d5.bindPopup(popup_92601772f9ec4f1682167c64cfc9e502)
+        ;
+
+        
+    
+    
+            var marker_807cd61684904d2bb6969232fd6f3ac9 = L.marker(
+                [52.5170365, 13.3888599],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_702f94d45e9b4b3ab1bc9c14d39b8cdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_807cd61684904d2bb6969232fd6f3ac9.setIcon(icon_702f94d45e9b4b3ab1bc9c14d39b8cdc);
+        
+    
+        var popup_28228408c0154029a33183fa1e2788e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89bb3549622d4dc6bcb4bee1e31e5520 = $(`<div id="html_89bb3549622d4dc6bcb4bee1e31e5520" style="width: 100.0%; height: 100.0%;">"20 Years on MTV" (2001)</div>`)[0];
+            popup_28228408c0154029a33183fa1e2788e5.setContent(html_89bb3549622d4dc6bcb4bee1e31e5520);
+        
+
+        marker_807cd61684904d2bb6969232fd6f3ac9.bindPopup(popup_28228408c0154029a33183fa1e2788e5)
+        ;
+
+        
+    
+    
+            var marker_bc4f2e67b78f4300b08a4b366c89b0b8 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_1ca44b243765479dad7877f7a5ec99de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bc4f2e67b78f4300b08a4b366c89b0b8.setIcon(icon_1ca44b243765479dad7877f7a5ec99de);
+        
+    
+        var popup_43a1990cb4514cecbdcbf767005fa49f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a31e827ac0c497a9856f1188b7fba39 = $(`<div id="html_0a31e827ac0c497a9856f1188b7fba39" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001)</div>`)[0];
+            popup_43a1990cb4514cecbdcbf767005fa49f.setContent(html_0a31e827ac0c497a9856f1188b7fba39);
+        
+
+        marker_bc4f2e67b78f4300b08a4b366c89b0b8.bindPopup(popup_43a1990cb4514cecbdcbf767005fa49f)
+        ;
+
+        
+    
+    
+            var marker_3eb02883986043b8b572f538183d9dd2 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_0da49d94d7b145909576b0e174b103e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_3eb02883986043b8b572f538183d9dd2.setIcon(icon_0da49d94d7b145909576b0e174b103e6);
+        
+    
+        var popup_d0d77f33e5774cb7a361aacf51925a95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ef8f46b15cd41ab9f73d8aa7f79211f = $(`<div id="html_1ef8f46b15cd41ab9f73d8aa7f79211f" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.1)}</div>`)[0];
+            popup_d0d77f33e5774cb7a361aacf51925a95.setContent(html_1ef8f46b15cd41ab9f73d8aa7f79211f);
+        
+
+        marker_3eb02883986043b8b572f538183d9dd2.bindPopup(popup_d0d77f33e5774cb7a361aacf51925a95)
+        ;
+
+        
+    
+    
+            var marker_26cf89e5060540a799f3a0a8ea6bfcf0 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_ef6fa63d4577406695548c58956aa6c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_26cf89e5060540a799f3a0a8ea6bfcf0.setIcon(icon_ef6fa63d4577406695548c58956aa6c9);
+        
+    
+        var popup_bfcb19af730b4d4682b1c479eebf51de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e214d9d96e6447a788ea47c0a4e3a9a2 = $(`<div id="html_e214d9d96e6447a788ea47c0a4e3a9a2" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.10)}</div>`)[0];
+            popup_bfcb19af730b4d4682b1c479eebf51de.setContent(html_e214d9d96e6447a788ea47c0a4e3a9a2);
+        
+
+        marker_26cf89e5060540a799f3a0a8ea6bfcf0.bindPopup(popup_bfcb19af730b4d4682b1c479eebf51de)
+        ;
+
+        
+    
+    
+            var marker_31a34447242748e08939285415e2291d = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_fcfe83b704d44fae9a19bbe957185906 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_31a34447242748e08939285415e2291d.setIcon(icon_fcfe83b704d44fae9a19bbe957185906);
+        
+    
+        var popup_6d432f12ee82450d83959299dc2f854c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59fd45a27ccb4971b65f5d0e52e255c5 = $(`<div id="html_59fd45a27ccb4971b65f5d0e52e255c5" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.11)}</div>`)[0];
+            popup_6d432f12ee82450d83959299dc2f854c.setContent(html_59fd45a27ccb4971b65f5d0e52e255c5);
+        
+
+        marker_31a34447242748e08939285415e2291d.bindPopup(popup_6d432f12ee82450d83959299dc2f854c)
+        ;
+
+        
+    
+    
+            var marker_7e5dede25a804f5bbed6b1473891de42 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_5d7e36a4972e4abc9e9ac8110b893cb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_7e5dede25a804f5bbed6b1473891de42.setIcon(icon_5d7e36a4972e4abc9e9ac8110b893cb7);
+        
+    
+        var popup_685cf1cba5a2453db4dfc59e326f89d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48a6131d13fe4849b294ff50c541e631 = $(`<div id="html_48a6131d13fe4849b294ff50c541e631" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.12)}</div>`)[0];
+            popup_685cf1cba5a2453db4dfc59e326f89d9.setContent(html_48a6131d13fe4849b294ff50c541e631);
+        
+
+        marker_7e5dede25a804f5bbed6b1473891de42.bindPopup(popup_685cf1cba5a2453db4dfc59e326f89d9)
+        ;
+
+        
+    
+    
+            var marker_42fa4ac797e54954b1e50703fab51232 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_fc05a8bacb9c4c6fa99454b560194241 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_42fa4ac797e54954b1e50703fab51232.setIcon(icon_fc05a8bacb9c4c6fa99454b560194241);
+        
+    
+        var popup_7810da24f083418fbd079c0016b6e2f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f8c2b075b784e0eb2a39a8f6606c609 = $(`<div id="html_0f8c2b075b784e0eb2a39a8f6606c609" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.13)}</div>`)[0];
+            popup_7810da24f083418fbd079c0016b6e2f3.setContent(html_0f8c2b075b784e0eb2a39a8f6606c609);
+        
+
+        marker_42fa4ac797e54954b1e50703fab51232.bindPopup(popup_7810da24f083418fbd079c0016b6e2f3)
+        ;
+
+        
+    
+    
+            var marker_716a090ed3984fa391e4e37c1809c9b7 = L.marker(
+                [-34.6075682, -58.4370894],
+                {}
+            ).addTo(marker_cluster_3b2d588d707b43378b9871d37817bcc1);
+        
+    
+            var icon_f3f80131774c446180942905292c8b98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_716a090ed3984fa391e4e37c1809c9b7.setIcon(icon_f3f80131774c446180942905292c8b98);
+        
+    
+        var popup_c9ba7d9b4c3e4be29efee37058d66a1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d735d31c36be427d819326c96eabc480 = $(`<div id="html_d735d31c36be427d819326c96eabc480" style="width: 100.0%; height: 100.0%;">"22, el loco" (2001) {(#1.14)}</div>`)[0];
+            popup_c9ba7d9b4c3e4be29efee37058d66a1f.setContent(html_d735d31c36be427d819326c96eabc480);
+        
+
+        marker_716a090ed3984fa391e4e37c1809c9b7.bindPopup(popup_c9ba7d9b4c3e4be29efee37058d66a1f)
+        ;
+
+        
+    
+</script>
